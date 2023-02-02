@@ -27,15 +27,14 @@
         "audios"
       ]
     },
-    "preco": {
-      "type": "string",
-      "required": true
-    },
     "categoria": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::categoria.categoria",
       "inversedBy": "produtos"
+    },
+    "preco": {
+      "type": "decimal"
     }
   }
 }
